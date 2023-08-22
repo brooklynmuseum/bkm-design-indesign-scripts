@@ -21,15 +21,6 @@ if (app.documents.length > 0) {
         }
     }
 
-    // Function to outline strokes
-    function outlineStrokes(pageItemCollection) {
-        for (var j = 0; j < pageItemCollection.length; j++) {
-            var item = pageItemCollection[j];
-            if (item.strokeWeight > 0) {  // Check if the item has a stroke
-                item.convertStrokeToFill();
-            }
-        }
-    }
 
     // Process for document pages
     for (var i = 0; i < doc.pages.length; i++) {
@@ -46,7 +37,6 @@ if (app.documents.length > 0) {
             var masterPage = masterSpread.pages[m];
             ungroupItems(masterPage.allPageItems);
             convertTextFramesToOutlines(masterPage.textFrames);
-            outlineStrokes(masterPage.allPageItems);
         }
     }
 
