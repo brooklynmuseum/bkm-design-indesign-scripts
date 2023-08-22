@@ -50,7 +50,7 @@ if (app.documents.length > 0) {
         }
     }
 
-    alert("Processing completed!");
+    alert("Outline Achieved!");
 } else {
-    alert("No active document found. Please open a document and try again.");
+    alert("No document found. Please open a document and try again.");
 }
