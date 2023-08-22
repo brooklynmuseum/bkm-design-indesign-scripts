@@ -1,5 +1,5 @@
 # Museum InDesign Scripts
-<p>An ongoing collection scripts used in production work at the Brooklyn Museum.</p>
+<p>An ongoing collection scripts used in graphic design production work at the Brooklyn Museum.</p>
 
 **Everything Metadata**
 <p>Adds plaintext username, color used in doc, fonts used in doc, date, modification date, creation date, number of page.</p>
