@@ -52,8 +52,16 @@ if (app.documents.length !== 0) {
         }
     }
 
-    // Display the collected information
-    alert(info.join("\n"));
+    // Create a text frame on the active page
+    var activePage = doc.layoutWindows[0].activePage || doc.pages[0];
+    var textFrame = activePage.textFrames.add({
+        geometricBounds: [50, 50, 250, 250], // [y1, x1, y2, x2] - Modify as needed
+        contents: info.join("\n")
+    });
+
+    // Optionally, fit the frame to the content
+    textFrame.fit(FitOptions.FRAME_TO_CONTENT);
+
 } else {
     alert("No active document found. Please open a document and try again.");
 }
