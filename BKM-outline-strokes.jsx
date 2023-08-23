@@ -27,7 +27,6 @@ if (app.documents.length > 0) {
         var page = doc.pages[i];
         ungroupItems(page.allPageItems);
         convertTextFramesToOutlines(page.textFrames);
-        outlineStrokes(page.allPageItems);
     }
 
     // Process for master pages
